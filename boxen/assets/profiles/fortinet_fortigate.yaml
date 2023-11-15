@@ -1,0 +1,16 @@
+---
+hardware:
+  memory: 1024
+  acceleration:
+    - kvm
+  serial_port_count: 1
+  nic_type: virtio-net-pci
+  nic_count: 4
+  nic_per_bus: 26
+advanced: {}
+tcp_nat_ports:
+  - 22
+  - 80
+  - 443
+udp_nat_ports:
+  - 161

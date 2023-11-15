@@ -7,6 +7,7 @@ const (
 	VendorPaloAlto   = "paloalto"
 	VendorIPInfusion = "ipinfusion"
 	VendorCheckpoint = "checkpoint"
+	VendorFortinet   = "fortinet"
 
 	PlatformAristaVeos           = "veos"
 	PlatformCiscoCsr1000v        = "csr1000v"
@@ -16,6 +17,7 @@ const (
 	PlatformPaloAltoPanos        = "panos"
 	PlatformIPInfusionOcNOS      = "ocnos"
 	PlatformCheckpointCloudguard = "cloudguard"
+	PlatformFortinetFortigate    = "fortigate"
 
 	PlatformTypeAristaVeos           = "arista_veos"
 	PlatformTypeCiscoCsr1000v        = "cisco_csr1000v"
@@ -25,6 +27,7 @@ const (
 	PlatformTypePaloAltoPanos        = "paloalto_panos"
 	PlatformTypeIPInfusionOcNOS      = "ipinfusion_ocnos"
 	PlatformTypeCheckpointCloudguard = "checkpoint_cloudguard"
+	PlatformTypeFortinetFortigate    = "fortinet_fortigate"
 
 	NicE1000  = "e1000"
 	NicVirtio = "virtio-net-pci"

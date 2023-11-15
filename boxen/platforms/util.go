@@ -33,6 +33,10 @@ func diskToVendorPlatformMap() map[*regexp.Regexp][]string {
 			"checkpoint",
 			"cloudguard",
 		},
+		regexp.MustCompile(`(?i)fortios_fortigate.qcow2`): {
+			"fortinet",
+			"fortigate",
+		},
 	}
 }
 
@@ -69,6 +73,8 @@ func pTDiskToVersionMap() map[string]*regexp.Regexp {
 			`(?i)(?:pa-vm-kvm-)(\d+\.\d+\.\d+).qcow2`),
 		PlatformTypeCheckpointCloudguard: regexp.MustCompile(
 			`(?i)check_point_(r\d+\.\d+)_cloudguard_.*.qcow2`),
+		PlatformTypeFortinetFortigate: regexp.MustCompile(
+			`FGT_VM64_KVM-v(\d+.{4}).*-build.*qcow2$`),
 	}
 }
 
